@@ -77,6 +77,8 @@ $header_domain_details=null;
 $header_tagline_details=null;
 $header_logo_details=null;
 $header=0;
+$atf=0;
+$btf=0;
  if($_POST)
     {
     $website_name = $_POST["website-name"];
@@ -92,6 +94,20 @@ $header=0;
     $header_phone_details=$_POST["header-phone-details"];
     $header_cta_details=$_POST["header-cta-details"];
     $header_top_details=$_POST["header-top-details"];
+    //ATF
+    $atf_slider= $_POST["atf-slider"];
+    $atf_reviews = $_POST["atf-reviews"];
+    $atf_info = $_POST["atf-info"];
+    $atf_slider_details=$_POST["atf-slider-details"];
+    $atf_reviews_details=$_POST["atf-reviews-details"];
+    $atf_info_details=$_POST["atf-info-details"];
+        //BTF
+    $btf_content= $_POST["btf-content"];
+    $btf_features = $_POST["btf-features"];
+    $btf_internal = $_POST["btf-internal"];
+    $btf_content_details=$_POST["btf-content-details"];
+    $btf_features_details=$_POST["btf-features-details"];
+    $btf_internal_details=$_POST["btf-internal-details"];
 
 if ($header_domain=="yes") {
 	$header++;
@@ -111,6 +127,24 @@ if ($header_cta=="yes") {
 if ($header_top=="yes") {
 	$header++;
 }
+if ($atf_slider=="yes") {
+	$atf++;
+}
+if ($atf_reviews=="yes") {
+	$atf++;
+}
+if ($atf_info=="yes") {
+	$atf++;
+}
+if ($btf_content=="yes") {
+	$btf++;
+}
+if ($btf_features=="yes") {
+	$btf++;
+}
+if ($btf_internal=="yes") {
+	$btf++;
+}
 }
     ?>
 	<h1>
@@ -118,7 +152,7 @@ if ($header_top=="yes") {
    </h1>
 
 <h2>Page Header</h2>
-<h3><?php echo $header;?> / 6 <?php $header = $header/6; echo round($header,2);?>%</h3>
+<h3><?php echo $header;?> / 6 <?php $header = $header/6; echo round($header*100,2);?>%</h3>
 <div class="table"><div class="row"><div class="question top">Question</div><div class="response top">Response</div><div class="details top">Details</div></div>
 <div class="row"><div class="question">An easily readable and memorable domain name?</div><div class="response <?php echo $header_domain;?>"><?php echo $header_domain;?></div><div class="details"><?php echo $header_domain_details;?></div></div>
 
@@ -134,9 +168,21 @@ if ($header_top=="yes") {
 critical pages?</div><div class="response <?php echo $header_top;?>"><?php echo $header_top;?></div><div class="details"><?php echo $header_top_details;?></div></div>
 
 </div>
+<h2>Above The Fold</h2>
+<h3><?php echo $atf;?> / 3 <?php $atf = $atf/3; echo round($atf*100,2);?>%</h3>
 <div class="table"><div class="row"><div class="question top">Question</div><div class="response top">Response</div><div class="details top">Details</div></div>
-<div class="row"><div class="question">TagLine - concise business description</div><div class="response no">No</div><div class="details"></div></div>
-<div class="row"><div class="question">Call-to-Action - What should visitors do?</div><div class="response yes">Yes</div><div class="details">Donate button present, but not highlighted</div></div>
-<div class="row"><div class="question">Call-to-Action - What should visitors do?</div><div class="response no">No</div><div class="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultrices vel ex non aliquet. Nunc nunc sapien, mattis non vestibulum in, volutpat et enim. Quisque pulvinar nulla id euismod viverra. Curabitur sed lacus lorem. Maecenas vitae diam eget enim rhoncus interdum. Sed sodales mollis ipsum eget posuere. Pellentesque eu ipsum malesuada, blandit elit sed, cursus nibh. Proin sed magna aliquam, congue tortor quis, blandit felis. </div></div>
-</div>
+<div class="row"><div class="question">Image / Slider?</div><div class="response <?php echo $atf_slider;?>"><?php echo $atf_slider;?></div><div class="details"><?php echo $atf_slider_details;?></div></div>
+
+<div class="row"><div class="question">Reviews & Testimonials?</div><div class="response <?php echo $atf_reviews;?>"><?php echo $atf_reviews;?></div><div class="details"><?php echo $atf_reviews_details;?></div></div>
+
+<div class="row"><div class="question">Important Business Info?</div><div class="response <?php echo $atf_info;?>"><?php echo $atf_info;?></div><div class="details"><?php echo $atf_info_details;?></div></div></div></div>
+
+<h2>Below The Fold</h2>
+<h3><?php echo $btf;?> / 3 <?php $btf = $btf/3; echo round($btf*100,2);?>%</h3>
+<div class="table"><div class="row"><div class="question top">Question</div><div class="response top">Response</div><div class="details top">Details</div></div>
+<div class="row"><div class="question">Quality Content?</div><div class="response <?php echo $btf_content;?>"><?php echo $btf_content;?></div><div class="details"><?php echo $btf_content_details;?></div></div>
+
+<div class="row"><div class="question">Main Features - Products & Services?</div><div class="response <?php echo $btf_features;?>"><?php echo $btf_features;?></div><div class="details"><?php echo $btf_features_details;?></div></div>
+
+<div class="row"><div class="question">Internal Links?</div><div class="response <?php echo $btf_internal;?>"><?php echo $btf_internal;?></div><div class="details"><?php echo $btf_internal_details;?></div></div></div></div>
 </body></html>

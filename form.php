@@ -69,6 +69,54 @@
 </textarea>
 	</p>
 </div>
-<p><input type="submit" name="submit" value="Send"></p>
+
+<div class="inputs">
+<p>Image / Slider?<br/>
+	  <input type="radio" name="atf-slider" value="yes">Yes<br/>
+  <input type="radio" name="atf-slider value="no">No<br/>
+  <textarea rows="4" cols="50" name="atf-slider-details">
+</textarea>
+	</p>
 </div>
+<div class="inputs">
+<p>Reviews & Testimonials?<br/>
+	  <input type="radio" name="atf-reviews" value="yes">Yes<br/>
+  <input type="radio" name="atf-reviews" value="no">No<br/>
+  <textarea rows="4" cols="50" name="atf-reviews-details">
+</textarea>
+	</p>
+</div>
+<div class="inputs">
+<p>Important Business Info?<br/>
+	  <input type="radio" name="atf-info" value="yes">Yes<br/>
+  <input type="radio" name="atf-info" value="no">No<br/>
+  <textarea rows="4" cols="50" name="atf-info-details">
+</textarea>
+	</p>
+</div>
+    <div class="inputs">
+<p>Quality Content?<br/>
+	  <input type="radio" name="btf-content" value="yes">Yes<br/>
+  <input type="radio" name="btf-content value="no">No<br/>
+  <textarea rows="4" cols="50" name="btf-content-details">
+</textarea>
+	</p>
+</div>
+<div class="inputs">
+<p>Main Features - Products & Services?<br/>
+	  <input type="radio" name="btf-features" value="yes">Yes<br/>
+  <input type="radio" name="btf-features" value="no">No<br/>
+  <textarea rows="4" cols="50" name="btf-features-details">
+</textarea>
+	</p>
+</div>
+<div class="inputs">
+<p>Internal Links?<br/>
+	  <input type="radio" name="btf-internal" value="yes">Yes<br/>
+  <input type="radio" name="btf-internal" value="no">No<br/>
+  <textarea rows="4" cols="50" name="btf-internal-details">
+</textarea>
+	</p>
+</div>
+<p><input type="submit" name="submit" value="Send"></p>
 </body></html>
