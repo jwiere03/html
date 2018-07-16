@@ -61,19 +61,79 @@ min-height: 64px;
 .row div {
 flex: 1;
 }
-h2 {
+h2, h3 {
 	text-align:center;
 }
 </style>
-</head></body><h2>Page Header</h2>
+</head><body>
+<?php 
+$header_domain=null;
+$website_name=null;
+$header_logo=null;
+$header_tagline=null;
+$header_phone=null;
+
+$header_domain_details=null;
+$header_tagline_details=null;
+$header_logo_details=null;
+$header=0;
+ if($_POST)
+    {
+    $website_name = $_POST["website-name"];
+    $header_domain=$_POST["header-domain"];
+    $header_domain_details=$_POST["header-domain-details"];
+    $header_logo=$_POST["header-logo"];
+    $header_logo_details=$_POST["header-logo-details"];
+    $header_tagline=$_POST["header-tagline"];
+    $header_tagline_details=$_POST["header-tagline-details"];
+    $header_phone = $_POST["header-phone"];
+    $header_cta = $_POST["header-cta"];
+    $header_top = $_POST["header-top"];
+    $header_phone_details=$_POST["header-phone-details"];
+    $header_cta_details=$_POST["header-cta-details"];
+    $header_top_details=$_POST["header-top-details"];
+
+if ($header_domain=="yes") {
+	$header++;
+}
+if ($header_logo=="yes") {
+	$header++;
+}
+if ($header_tagline=="yes") {
+	$header++;
+}
+if ($header_phone=="yes") {
+	$header++;
+}
+if ($header_cta=="yes") {
+	$header++;
+}
+if ($header_top=="yes") {
+	$header++;
+}
+}
+    ?>
+	<h1>
+		<?php echo $website_name; ?>
+   </h1>
+
+<h2>Page Header</h2>
+<h3><?php echo $header;?> / 6 <?php $header = $header/6; echo round($header,2);?>%</h3>
 <div class="table"><div class="row"><div class="question top">Question</div><div class="response top">Response</div><div class="details top">Details</div></div>
-<div class="row"><div class="question">An easily readable and memorable domain name?</div><div class="response no">No</div><div class="details"></div></div>
-<div class="row"><div class="question">Logo?</div><div class="response yes">Yes</div><div class="details"></div></div>
-<div class="row"><div class="question">TagLine - concise business description?</div><div class="response no">No</div><div class="details"></div></div>
-<div class="row"><div class="question">Phone Number?</div><div class="response no">No</div><div class="details"></div></div>
-<div class="row"><div class="question">Call-to-Action - What should visitors do?</div><div class="response no">No</div><div class="details"></div></div>
+<div class="row"><div class="question">An easily readable and memorable domain name?</div><div class="response <?php echo $header_domain;?>"><?php echo $header_domain;?></div><div class="details"><?php echo $header_domain_details;?></div></div>
+
+<div class="row"><div class="question">Logo?</div><div class="response <?php echo $header_logo;?>"><?php echo $header_logo;?></div><div class="details"><?php echo $header_logo_details;?></div></div>
+
+<div class="row"><div class="question">TagLine - concise business description?</div><div class="response <?php echo $header_tagline;?>"><?php echo $header_tagline;?></div><div class="details"><?php echo $header_tagline_details;?></div></div>
+
+<div class="row"><div class="question">Phone Number?</div><div class="response <?php echo $header_phone;?>"><?php echo $header_phone;?></div><div class="details"><?php echo $header_phone_details;?></div></div>
+
+<div class="row"><div class="question">Call-to-Action - What should visitors do?</div><div class="response <?php echo $header_cta;?>"><?php echo $header_cta;?></div><div class="details"><?php echo $header_cta_details;?></div></div>
+
 <div class="row"><div class="question">Top Navivigation - discreet options for
-critical pages?</div><div class="response no">No</div><div class="details"></div></div></div>
+critical pages?</div><div class="response <?php echo $header_top;?>"><?php echo $header_top;?></div><div class="details"><?php echo $header_top_details;?></div></div>
+
+</div>
 <div class="table"><div class="row"><div class="question top">Question</div><div class="response top">Response</div><div class="details top">Details</div></div>
 <div class="row"><div class="question">TagLine - concise business description</div><div class="response no">No</div><div class="details"></div></div>
 <div class="row"><div class="question">Call-to-Action - What should visitors do?</div><div class="response yes">Yes</div><div class="details">Donate button present, but not highlighted</div></div>

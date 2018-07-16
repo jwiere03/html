@@ -1,7 +1,74 @@
-<html><head><title>SCS Form</title></head><body>
-<?php
-$form_block = "<form method=\"POST\" Action=\"$_SERVER[PHP_SELF]\">
-<p>Website Name:<br/>
-<input type=\"text\" name=\"website_name\"></p>
-<p><input type=\"submit\" name=\"submit\" value=\"Send\"></p>"; ?>
+<html><head><title>SCS Form</title>
+<style>
+.form1 {
+	width: 960px;
+	margin: 0 auto;
+}
+.form1 .inputs {
+	width: 100%;
+	border-bottom: thin solid #000000;
+	padding: 10px;
+}
+.form1 .inputs:nth-child(even) {
+	background: #e2e2e2;
+}
+</style>
+
+</head><body><div class="form1">
+<form method="POST" Action="demo.php">
+<div class="inputs">
+<p>Website Name:<br/>	
+<input type="text" name="website-name"></p></div>
+<div class="inputs">
+<p>An easily readable and memorable domain name?<br/>
+	  <input type="radio" name="header-domain" value="yes">Yes<br/>
+  <input type="radio" name="header-domain" value="no">No<br/>
+  <textarea rows="4" cols="50" name="header-domain-details">
+</textarea>
+	</p>
+</div>
+<div class="inputs">
+<p>Logo?<br/>
+	  <input type="radio" name="header-logo" value="yes">Yes<br/>
+  <input type="radio" name="header-logo" value="no">No<br/>
+  <textarea rows="4" cols="50" name="header-logo-details">
+</textarea>
+	</p>
+</div>
+<div class="inputs">
+<p>TagLine - concise business description?<br/>
+	  <input type="radio" name="header-tagline" value="yes">Yes<br/>
+  <input type="radio" name="header-tagline" value="no">No<br/>
+  <textarea rows="4" cols="50" name="header-tagline-details">
+</textarea>
+	</p>
+</div>
+<div class="inputs">
+<p>Phone Number?<br/>
+	  <input type="radio" name="header-phone" value="yes">Yes<br/>
+  <input type="radio" name="header-phone" value="no">No<br/>
+  <textarea rows="4" cols="50" name="header-phone-details">
+</textarea>
+	</p>
+</div>
+
+<div class="inputs">
+<p>Call-to-Action - What should visitors do?<br/>
+	  <input type="radio" name="header-cta" value="yes">Yes<br/>
+  <input type="radio" name="header-cta" value="no">No<br/>
+  <textarea rows="4" cols="50" name="header-cta-details">
+</textarea>
+	</p>
+</div>
+
+<div class="inputs">
+<p>Top Navivigation - discreet options for critical pages?<br/>
+	  <input type="radio" name="header-top" value="yes">Yes<br/>
+  <input type="radio" name="header-top" value="no">No<br/>
+  <textarea rows="4" cols="50" name="header-top-details">
+</textarea>
+	</p>
+</div>
+<p><input type="submit" name="submit" value="Send"></p>
+</div>
 </body></html>
