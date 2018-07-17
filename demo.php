@@ -174,10 +174,11 @@ if ($footer_contact=="yes") {
 }
 }
     ?>
-	<h1>
+  <div style="height: 50vh; display: flex; align-items: flex-end; justify-content: center;"> <img src="SCS_Logo_IT_Better_clipped_rev_1.png" style="width: 300px; height: auto;"></div>
+   <div style="height: 50vh; display: flex; align-items: flex-start; justify-content: center;"> <div style="flex-direction: column;"><h1 style="text-align: center;">Website Evaluation conducted for</h1><h2 style="text-align: center;">
 		<?php echo $website_name; ?>
-   </h1>
-
+   </h2></div></div>
+	
 <h2>Page Header</h2>
 <h3><?php echo $header;?> / 6 <?php $header = $header/6; echo round($header*100,2);?>%</h3>
 <div class="table"><div class="row"><div class="question top">Question</div><div class="response top">Response</div><div class="details top">Details</div></div>
@@ -211,7 +212,7 @@ critical pages?</div><div class="response <?php echo $header_top;?>"><?php echo 
 
 <div class="row"><div class="question">Main Features - Products & Services?</div><div class="response <?php echo $btf_features;?>"><?php echo $btf_features;?></div><div class="details"><?php echo $btf_features_details;?></div></div>
 
-<div class="row"><div class="question">Internal Links?</div><div class="response <?php echo $btf_internal;?>"><?php echo $btf_internal;?></div><div class="details"><?php echo $btf_internal_details;?></div></div>
+<div class="row"><div class="question">Internal Links?</div><div class="response <?php echo $btf_internal;?>"><?php echo $btf_internal;?></div><div class="details"><?php echo $btf_internal_details;?></div></div></div>
 <h2>Page Footer</h2>
 <h3><?php echo $footer;?> / 5 <?php $footer = $footer/5; echo round($footer*100,2);?>%</h3>
 <div class="table"><div class="row"><div class="question top">Question</div><div class="response top">Response</div><div class="details top">Details</div></div>
