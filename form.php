@@ -73,7 +73,7 @@
 <div class="inputs">
 <p>Image / Slider?<br/>
 	  <input type="radio" name="atf-slider" value="yes">Yes<br/>
-  <input type="radio" name="atf-slider value="no">No<br/>
+  <input type="radio" name="atf-slider" value="no">No<br/>
   <textarea rows="4" cols="50" name="atf-slider-details">
 </textarea>
 	</p>
@@ -97,7 +97,7 @@
     <div class="inputs">
 <p>Quality Content?<br/>
 	  <input type="radio" name="btf-content" value="yes">Yes<br/>
-  <input type="radio" name="btf-content value="no">No<br/>
+  <input type="radio" name="btf-content" value="no">No<br/>
   <textarea rows="4" cols="50" name="btf-content-details">
 </textarea>
 	</p>
@@ -115,6 +115,47 @@
 	  <input type="radio" name="btf-internal" value="yes">Yes<br/>
   <input type="radio" name="btf-internal" value="no">No<br/>
   <textarea rows="4" cols="50" name="btf-internal-details">
+</textarea>
+	</p>
+</div>
+<div class="inputs">
+<p>Navigation - Common secondary pages?<br/>
+	  <input type="radio" name="footer-navigation" value="yes">Yes<br/>
+  <input type="radio" name="footer-navigation" value="no">No<br/>
+  <textarea rows="4" cols="50" name="footer-navigation-details">
+</textarea>
+	</p>
+</div>
+<div class="inputs">
+<p>Social Media Buttons<br/>
+	  <input type="radio" name="footer-social" value="yes">Yes<br/>
+  <input type="radio" name="footer-social" value="no">No<br/>
+  <textarea rows="4" cols="50" name="footer-social-details">
+</textarea>
+	</p>
+</div>
+<div class="inputs">
+<p>Online Chat Feature?<br/>
+	  <input type="radio" name="footer-chat" value="yes">Yes<br/>
+  <input type="radio" name="footer-chat" value="no">No<br/>
+  <textarea rows="4" cols="50" name="footer-chat-details">
+</textarea>
+	</p>
+</div>
+<div class="inputs">
+<p>Business Hours?<br/>
+	  <input type="radio" name="footer-hours" value="yes">Yes<br/>
+  <input type="radio" name="footer-hours" value="no">No<br/>
+  <textarea rows="4" cols="50" name="footer-hours-details">
+</textarea>
+	</p>
+</div>
+
+<div class="inputs">
+<p>Contact Information - Address, Phone #, link to Contact Form?<br/>
+	  <input type="radio" name="footer-contact" value="yes">Yes<br/>
+  <input type="radio" name="footer-contact" value="no">No<br/>
+  <textarea rows="4" cols="50" name="footer-contact-details">
 </textarea>
 	</p>
 </div>

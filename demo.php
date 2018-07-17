@@ -79,6 +79,7 @@ $header_logo_details=null;
 $header=0;
 $atf=0;
 $btf=0;
+$footer=0;
  if($_POST)
     {
     $website_name = $_POST["website-name"];
@@ -108,6 +109,17 @@ $btf=0;
     $btf_content_details=$_POST["btf-content-details"];
     $btf_features_details=$_POST["btf-features-details"];
     $btf_internal_details=$_POST["btf-internal-details"];
+    //Footer
+     $footer_navigation=$_POST["footer-navigation"];
+    $footer_navigation_details=$_POST["footer-navigation-details"];
+    $footer_social=$_POST["footer-social"];
+    $footer_social_details=$_POST["footer-social-details"];
+    $footer_chat=$_POST["footer-chat"];
+    $footer_chat_details=$_POST["footer-chat-details"];
+    $footer_hours = $_POST["footer-hours"];
+    $footer_contact = $_POST["footer-contact"];
+    $footer_contact_details = $_POST["footer-contact-details"];
+    $footer_hours_details=$_POST["footer-hours-details"];
 
 if ($header_domain=="yes") {
 	$header++;
@@ -144,6 +156,21 @@ if ($btf_features=="yes") {
 }
 if ($btf_internal=="yes") {
 	$btf++;
+}
+if ($footer_navigation=="yes") {
+	$footer++;
+}
+if ($footer_social=="yes") {
+	$footer++;
+}
+if ($footer_chat=="yes") {
+	$footer++;
+}
+if ($footer_hours=="yes") {
+	$footer++;
+}
+if ($footer_contact=="yes") {
+	$footer++;
 }
 }
     ?>
@@ -184,5 +211,21 @@ critical pages?</div><div class="response <?php echo $header_top;?>"><?php echo 
 
 <div class="row"><div class="question">Main Features - Products & Services?</div><div class="response <?php echo $btf_features;?>"><?php echo $btf_features;?></div><div class="details"><?php echo $btf_features_details;?></div></div>
 
-<div class="row"><div class="question">Internal Links?</div><div class="response <?php echo $btf_internal;?>"><?php echo $btf_internal;?></div><div class="details"><?php echo $btf_internal_details;?></div></div></div></div>
+<div class="row"><div class="question">Internal Links?</div><div class="response <?php echo $btf_internal;?>"><?php echo $btf_internal;?></div><div class="details"><?php echo $btf_internal_details;?></div></div>
+<h2>Page Footer</h2>
+<h3><?php echo $footer;?> / 5 <?php $footer = $footer/5; echo round($footer*100,2);?>%</h3>
+<div class="table"><div class="row"><div class="question top">Question</div><div class="response top">Response</div><div class="details top">Details</div></div>
+<div class="row"><div class="question">Navigation - Common secondary pages?</div><div class="response <?php echo $footer_navigation;?>"><?php echo $footer_navigation;?></div><div class="details"><?php echo $footer_navigation_details;?></div></div>
+
+<div class="row"><div class="question">Social Media Buttons?</div><div class="response <?php echo $footer_social;?>"><?php echo $footer_social;?></div><div class="details"><?php echo $footer_social_details;?></div></div>
+
+<div class="row"><div class="question">Online Chat Feature?</div><div class="response <?php echo $footer_chat;?>"><?php echo $footer_chat;?></div><div class="details"><?php echo $footer_chat_details;?></div></div>
+
+<div class="row"><div class="question">Business Hours?</div><div class="response <?php echo $footer_hours;?>"><?php echo $footer_hours;?></div><div class="details"><?php echo $footer_hours_details;?></div></div>
+
+<div class="row"><div class="question">Contact Information - Address, Phone #, link to Contact Form?</div><div class="response <?php echo $footer_contact;?>"><?php echo $footer_contact;?></div><div class="details"><?php echo $footer_contact_details;?></div></div>
+
+
+
+</div></div>
 </body></html>
