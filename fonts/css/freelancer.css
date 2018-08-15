@@ -479,26 +479,25 @@ footer {
 }
 @font-face {
 	src: 
-	local('dicotli_'),	
-	url('/fonts/dicotli_.ttf') 
-	format('truetype');
-}
-@font-face {
-	src: 
 	local('dicotme_'),	
 	url('/fonts/dicotme_.ttf') 
 	format('truetype');
 }
 @font-face {
-	src: 
-	local('AvenirLTStd-Roman'),	
-	url('/fonts/AvenirLTStd-Roman.ttf') 
-	format('truetype');
+font-family: 'AvenirLTStd-Roman';	
+    src: url('http://html.cb/fonts/fonts/AvenirLTStd-Roman.otf') format('opentype');  
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'AvenirLTStd-Book';
+    font-weight: bold;
+    src: url('http://html.cb/fonts/font/fonts/AvenirLTStd-Book.otf') format('opentype');
 }
 @font-face {
     font-family: 'dicotlightregular';
-    src: url('/fonts/dicotli_2-webfont.woff2') format('woff2'),
-         url('/fonts/dicotli_2-webfont.woff') format('woff');
+    src: url('http://html.cb/fonts/fonts/dicotli_2-webfont.woff2') format('woff2'),
+         url('http://html.cb/fonts/fonts/dicotli_2-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 

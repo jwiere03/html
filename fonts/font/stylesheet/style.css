@@ -1,0 +1,23 @@
+.content {
+	max-width: 960px;
+	margin: 0 auto;
+}
+	body{
+				font-family: 'dicotlightregular';
+							}
+@font-face {
+    font-family: 'dicotlightregular';
+    src: url('http://html.cb/fonts/font/fonts/dicotli_2-webfont.woff2') format('woff2'),
+         url('http://html.cb/fonts/font/fonts/dicotli_2-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'AvenirLTStd-Book';
+    font-weight: bold;
+    src: url('http://html.cb/fonts/font/fonts/AvenirLTStd-Book.otf') format('opentype');
+}
+h1 {
+	font-family: 'AvenirLTStd-Book';
+}
