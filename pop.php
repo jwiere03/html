@@ -1,1 +1,1 @@
-<?php header("location: http://www.dcd-inc.com?pop=yes648"); ?>
+<?php header("location: https://www.dcd-inc.com?pop=yes648"); ?>
