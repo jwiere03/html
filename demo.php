@@ -72,6 +72,9 @@ $website_name=null;
 $header_logo=null;
 $header_tagline=null;
 $header_phone=null;
+$header_phone_details=null;
+$header_cta_details=null;
+$header_top_details=null;
 
 $header_domain_details=null;
 $header_tagline_details=null;
